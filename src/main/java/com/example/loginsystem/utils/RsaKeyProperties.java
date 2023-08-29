@@ -1,9 +1,16 @@
 package com.example.loginsystem.utils;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.stereotype.Component;
+
 import java.security.KeyPair;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 
+@Getter
+@Setter
+@Component
 public class RsaKeyProperties {
 
     private RSAPublicKey publicKey;
