@@ -10,7 +10,7 @@ public class KeyGenerator {
 
         try {
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
-            keyPairGenerator.initialize(2040);
+            keyPairGenerator.initialize(2048);
             keyPair = keyPairGenerator.generateKeyPair();
 
         } catch (NoSuchAlgorithmException e) {
