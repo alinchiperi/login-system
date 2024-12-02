@@ -29,7 +29,7 @@ public class LoginSystemApplication {
 
             Set<Role> roles = new HashSet<>();
             roles.add(adminRole);
-            User admin = new User("admin", passwordEncoder.encode("password"), roles);
+            User admin = new User("alin", passwordEncoder.encode("password"), roles);
             userRepository.save(admin);
 
         };
